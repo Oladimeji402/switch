@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Switch</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2,3,4,5,6,7&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"General Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="antialiased text-slate-900 bg-white font-sans">
+
+  <!-- SECTION: Hero -->
+  <section id="hero" class="relative min-h-screen bg-[#060608] overflow-hidden">
+    <img src="heroImage.jpg" alt="" class="absolute inset-0 w-full h-full object-cover object-[right_top]" />
+
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <!-- Navbar -->
+      <header class="max-w-[1306px] w-full mx-auto flex items-center justify-between px-6 md:px-10 py-8 md:py-[28px]">
+        <img src="logo.png" alt="Switch Business" class="h-[51px] w-[122px]" />
+
+        <nav class="hidden md:flex items-center gap-[30px] text-[16px] tracking-[0.325px] text-[#c9c9d0]">
+          <a href="#" class="hover:text-white transition-colors">About</a>
+          <a href="#" class="hover:text-white transition-colors">Contact</a>
+          <a href="#" class="hover:text-white transition-colors">FAQ</a>
+          <a href="#" class="hover:text-white transition-colors">Blog</a>
+        </nav>
+
+        <div class="flex items-center gap-[23px]">
+          <a href="#" class="text-[16px] tracking-[0.325px] text-white hover:text-white/80 transition-colors">Log in</a>
+          <a href="#" class="inline-flex items-center justify-center rounded-full bg-[#0052fe] hover:bg-blue-700 transition-colors text-white text-[16px] tracking-[0.325px] font-medium w-[133px] h-[40px]">Get started</a>
+        </div>
+      </header>
+
+      <!-- Hero content -->
+      <div class="flex-1 flex items-center max-w-[1306px] w-full mx-auto px-6 md:px-10">
+        <div class="max-w-[696px]">
+          <h1 class="text-white text-[44px] md:text-[58px] lg:text-[74px] font-semibold leading-[1.065] tracking-tight">
+            The business account built for global <em class="italic font-normal">payments.</em>
+          </h1>
+          <p class="mt-8 text-white/70 text-[18px] md:text-[22px] leading-[1.36] max-w-[615px]">
+            Send, receive, and manage global payments effortlessly. Access 50+ currencies, named multi-currency accounts, instant payouts, and zero setup fees.
+          </p>
+          <div class="mt-12 flex flex-wrap items-center gap-5">
+            <a href="#" class="inline-flex items-center justify-center gap-[6px] rounded-full bg-[#0052fe] hover:bg-blue-700 transition-colors text-white text-[16px] font-medium w-[239px] h-[54px]">
+              Open your account
+              <img src="icons/arrow-right.svg" alt="" class="size-4" />
+            </a>
+            <a href="#" class="inline-flex items-center justify-center rounded-full border border-white/80 hover:border-white transition-colors text-white/80 hover:text-white text-[16px] font-medium w-[213px] h-[54px]">
+              Talk to sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Why Switch Business -->
+  <section id="why-switch" class="relative bg-[#060608] py-28 md:py-36">
+    <div class="max-w-[1309px] mx-auto px-6 md:px-10">
+      <div class="flex flex-col gap-10">
+        <p class="text-[#4f7aff] text-[18px] font-medium uppercase tracking-[1.44px]">Why Switch Business</p>
+
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-32">
+          <div class="flex flex-col gap-8 w-full lg:w-[457px] shrink-0">
+            <h2 class="text-[38px] md:text-[52px] font-medium leading-[1.08] text-white">
+              Pay Globally.<br />
+              <span class="text-[#bac6df]">Control Locally.</span>
+            </h2>
+            <p class="text-[#8a92a2] text-[18px] leading-relaxed">
+              Move money across borders instantly, keep full control over your payments, currencies, and transactions — all from one platform.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[48px] gap-y-[63px] w-full lg:max-w-[767px]">
+            <div class="flex gap-8 pb-6 border-b border-white/[0.06]">
+              <span class="text-[#575f6f] text-[13px] tracking-[1.3px]" style="font-family:Inter,sans-serif">01</span>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-[22px] font-semibold">Speed and Simplicity</h3>
+                <p class="text-[#8a92a2] text-[18px]">Send payments internationally in minutes.</p>
+              </div>
+            </div>
+            <div class="flex gap-8 pb-6 border-b border-white/[0.06]">
+              <span class="text-[#575f6f] text-[13px] tracking-[1.3px]" style="font-family:Inter,sans-serif">03</span>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-[22px] font-semibold">Compliance and Trust</h3>
+                <p class="text-[#8a92a2] text-[18px]">Global compliance, zero headaches</p>
+              </div>
+            </div>
+            <div class="flex gap-8">
+              <span class="text-[#575f6f] text-[13px] tracking-[1.3px]" style="font-family:Inter,sans-serif">02</span>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-[22px] font-semibold capitalize">One platform, multiple markets</h3>
+                <p class="text-[#8a92a2] text-[18px]">Manage all your international payment corridors from a single dashboard.</p>
+              </div>
+            </div>
+            <div class="flex gap-8">
+              <span class="text-[#575f6f] text-[13px] tracking-[1.3px]" style="font-family:Inter,sans-serif">04</span>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-[22px] font-semibold">Built for Growth</h3>
+                <p class="text-[#8a92a2] text-[18px]">Scale your business across borders effortlessly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+          <div class="bg-white/[0.03] border border-white/[0.06] rounded-[17px] p-[26px]">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-[17px] tracking-[0.33px]">🇨🇦 CAD → 🇳🇬 NGN</span>
+              <span class="text-[12px]" style="color:rgba(52,211,153,0.7)">Live</span>
+            </div>
+            <p class="mt-[18px] text-white text-[24px] font-bold tracking-[-0.48px]">CA$5,000</p>
+            <p class="mt-1 text-[15px]" style="color:rgba(255,255,255,0.86)">₦5,400,000</p>
+            <div class="mt-[18px] pt-[18px] border-t border-white/[0.06]">
+              <p class="text-[13px]" style="color:rgba(255,255,255,0.85)">1 CAD = ₦1,080</p>
+            </div>
+          </div>
+          <div class="bg-white/[0.03] border border-white/[0.06] rounded-[17px] p-[26px]">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-[17px] tracking-[0.33px]">🇺🇸 USD → 🇨🇦 CAD</span>
+              <span class="text-[12px]" style="color:rgba(52,211,153,0.7)">Live</span>
+            </div>
+            <p class="mt-[18px] text-white text-[24px] font-bold tracking-[-0.48px]">$10,000</p>
+            <p class="mt-1 text-[15px]" style="color:rgba(255,255,255,0.86)">CAD$7,400</p>
+            <div class="mt-[18px] pt-[18px] border-t border-white/[0.06]">
+              <p class="text-[13px]" style="color:rgba(255,255,255,0.85)">1 GBP = 1.72 CAD</p>
+            </div>
+          </div>
+          <div class="bg-white/[0.03] border border-white/[0.06] rounded-[17px] p-[26px]">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-[17px] tracking-[0.33px]">🇬🇧 GBP → 🇨🇦 CAD</span>
+              <span class="text-[12px]" style="color:rgba(52,211,153,0.7)">Live</span>
+            </div>
+            <p class="mt-[18px] text-white text-[24px] font-bold tracking-[-0.48px]">£3,200</p>
+            <p class="mt-1 text-[15px]" style="color:rgba(255,255,255,0.86)">CA$5,504</p>
+            <div class="mt-[18px] pt-[18px] border-t border-white/[0.06]">
+              <p class="text-[13px]" style="color:rgba(255,255,255,0.85)">1 GBP = 1.72 CAD</p>
+            </div>
+          </div>
+          <div class="bg-white/[0.03] border border-white/[0.06] rounded-[17px] p-[26px]">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-[17px] tracking-[0.33px]">🇳🇬 NGN → 🇨🇦 CAD</span>
+              <span class="text-[12px]" style="color:rgba(52,211,153,0.7)">Live</span>
+            </div>
+            <p class="mt-[18px] text-white text-[24px] font-bold tracking-[-0.48px]">₦123,200</p>
+            <p class="mt-1 text-[15px]" style="color:rgba(255,255,255,0.86)">CA$5,504</p>
+            <div class="mt-[18px] pt-[18px] border-t border-white/[0.06]">
+              <p class="text-[13px]" style="color:rgba(255,255,255,0.85)">1 NGN = 1.72 CAD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Capabilities -->
+  <section id="capabilities" class="relative bg-[#060608] py-28 md:py-36 overflow-hidden">
+    <div class="max-w-[1306px] mx-auto px-6 md:px-10">
+      <p class="text-[#4f7aff] text-[18px] font-medium uppercase tracking-[1.44px]">Capabilities</p>
+      <h2 class="mt-3 text-[38px] md:text-[52px] font-semibold leading-[1.08] text-white max-w-[640px]">
+        Built for Businesses <span class="text-[#bac6df]">That Operate Globally</span>
+      </h2>
+    </div>
+
+    <div class="mt-16 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div class="marquee-track flex gap-6 w-max">
+        <!-- Card set (duplicated below for seamless loop) -->
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Payments</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Send &amp; receive cross-border payments</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Move funds internationally with speed and transparency. Pay vendors, suppliers, or partners anywhere in the world.</p>
+          </div>
+          <img src="images/capability-payments-globe.png" alt="" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[420px]" />
+          <div class="absolute bottom-[40px] left-1/2 -translate-x-1/2 flex">
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇨🇦</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇺🇸</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇳🇬</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇪🇺</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇬🇧</span>
+            <span class="size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇬🇭</span>
+          </div>
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">FX</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Operate across multiple currencies</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Access multi-currency accounts and convert at real exchange rates across supported corridors — no hidden markups.</p>
+          </div>
+          <img src="images/capability-currencies.png" alt="" class="absolute bottom-[22px] left-1/2 -translate-x-1/2 w-[362px]" />
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Control</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Manage with clear limits and controls</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Set spending limits, track transactions, and maintain full visibility over your business payments.</p>
+          </div>
+          <div class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[362px] rounded-[18px] border border-[#35466f] p-6" style="background:linear-gradient(155deg, #2a3c67 30%, #5377cd 120%)">
+            <p class="text-[#cfd9f5] text-[11px] tracking-wide">Monthly Limit</p>
+            <p class="mt-1 text-white text-[26px] font-semibold tracking-tight">$2,354.09</p>
+            <div class="mt-5 h-[8px] rounded-full bg-white/10 overflow-hidden">
+              <div class="h-full w-[68%] rounded-full" style="background:linear-gradient(90deg,#0052fe,#ffcc00)"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-[10px] text-[#cfd9f5]/70">
+              <span>$0</span>
+              <span>$5,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Scale</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Scale as your business grows</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">From freelancer to enterprise — unlock higher limits, more features, and dedicated support as your needs evolve.</p>
+          </div>
+          <img src="images/capability-growth.png" alt="" class="absolute bottom-[10px] left-1/2 -translate-x-1/2 w-[340px]" />
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Security</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Your money is as safe as they can be</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Bank-level encryption, fraud monitoring, and multi-factor authentication protect every transaction you make.</p>
+          </div>
+          <div class="absolute bottom-0 inset-x-0 h-[280px] flex items-center justify-center">
+            <div class="absolute size-[220px] rounded-full bg-[#0052fe]/25 blur-[60px]"></div>
+            <svg class="relative size-20 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 10V8a6 6 0 1112 0v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="10" width="16" height="11" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="15.5" r="1.75" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- duplicate set for seamless infinite loop -->
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden" aria-hidden="true">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Payments</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Send &amp; receive cross-border payments</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Move funds internationally with speed and transparency. Pay vendors, suppliers, or partners anywhere in the world.</p>
+          </div>
+          <img src="images/capability-payments-globe.png" alt="" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[420px]" />
+          <div class="absolute bottom-[40px] left-1/2 -translate-x-1/2 flex">
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇨🇦</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇺🇸</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇳🇬</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇪🇺</span>
+            <span class="-mr-[11px] size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇬🇧</span>
+            <span class="size-[40px] rounded-full border-2 border-white bg-white flex items-center justify-center text-[18px] overflow-hidden">🇬🇭</span>
+          </div>
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden" aria-hidden="true">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">FX</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Operate across multiple currencies</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Access multi-currency accounts and convert at real exchange rates across supported corridors — no hidden markups.</p>
+          </div>
+          <img src="images/capability-currencies.png" alt="" class="absolute bottom-[22px] left-1/2 -translate-x-1/2 w-[362px]" />
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden" aria-hidden="true">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Control</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Manage with clear limits and controls</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Set spending limits, track transactions, and maintain full visibility over your business payments.</p>
+          </div>
+          <div class="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-[362px] rounded-[18px] border border-[#35466f] p-6" style="background:linear-gradient(155deg, #2a3c67 30%, #5377cd 120%)">
+            <p class="text-[#cfd9f5] text-[11px] tracking-wide">Monthly Limit</p>
+            <p class="mt-1 text-white text-[26px] font-semibold tracking-tight">$2,354.09</p>
+            <div class="mt-5 h-[8px] rounded-full bg-white/10 overflow-hidden">
+              <div class="h-full w-[68%] rounded-full" style="background:linear-gradient(90deg,#0052fe,#ffcc00)"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-[10px] text-[#cfd9f5]/70">
+              <span>$0</span>
+              <span>$5,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden" aria-hidden="true">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Scale</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Scale as your business grows</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">From freelancer to enterprise — unlock higher limits, more features, and dedicated support as your needs evolve.</p>
+          </div>
+          <img src="images/capability-growth.png" alt="" class="absolute bottom-[10px] left-1/2 -translate-x-1/2 w-[340px]" />
+        </div>
+
+        <div class="relative w-[420px] h-[471px] shrink-0 rounded-[20px] border border-[#2d3852] bg-[#081534] overflow-hidden" aria-hidden="true">
+          <div class="absolute left-[41px] top-[29px] w-[338px] flex flex-col gap-3 z-10">
+            <span class="inline-flex w-fit items-center justify-center bg-[#0052fe] border border-[#4f7aff]/15 rounded px-3 py-1.5 text-[10px] tracking-[1.1px] uppercase text-white">Security</span>
+            <h3 class="text-white text-xl font-semibold leading-snug">Your money is as safe as they can be</h3>
+            <p class="text-[#aabeff] text-sm leading-relaxed">Bank-level encryption, fraud monitoring, and multi-factor authentication protect every transaction you make.</p>
+          </div>
+          <div class="absolute bottom-0 inset-x-0 h-[280px] flex items-center justify-center">
+            <div class="absolute size-[220px] rounded-full bg-[#0052fe]/25 blur-[60px]"></div>
+            <svg class="relative size-20 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 10V8a6 6 0 1112 0v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="10" width="16" height="11" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="15.5" r="1.75" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: How it works -->
+  <section id="how-it-works" class="relative bg-[#09090d] overflow-hidden py-32 md:py-40">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#09090d] from-[36.41%] via-[#0052fe] via-[56.48%] to-[#09090d] to-[78.555%]"></div>
+
+    <div class="relative z-10 max-w-[1306px] mx-auto px-8">
+      <p class="text-[#4f7aff] text-lg font-medium uppercase tracking-[1.44px]">How it works</p>
+      <h2 class="mt-3 text-white text-4xl md:text-5xl lg:text-[52px] leading-[1.08] max-w-[553px]">
+        Smart Verification, <span class="text-[#bac6df]">Fast Approvals</span>
+      </h2>
+
+      <div class="mt-24 relative rounded-[24px] bg-[rgba(8,21,52,0.52)] backdrop-blur-[100px] shadow-[inset_0_0_8px_0_#8fb3ff,inset_0_0_120px_0_#132e67] p-10 md:p-14 lg:px-20 lg:py-16">
+        <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-10">
+
+          <!-- Step screens mockup -->
+          <div class="relative bg-white rounded-[20px] overflow-hidden shrink-0 w-full max-w-[543px] aspect-[543/557]">
+
+            <!-- Step 1: Create an Account -->
+            <div class="step-panel absolute inset-0 opacity-100 pointer-events-auto" data-step-panel="0">
+              <img src="images/steps-3.png" alt="Create an account" class="absolute inset-0 size-full object-cover" />
+            </div>
+
+            <!-- Step 2: Verify Your Business -->
+            <div class="step-panel absolute inset-0 opacity-0 pointer-events-none" data-step-panel="1">
+              <img src="images/steps-2.png" alt="Verify your business" class="absolute inset-0 size-full object-cover" />
+            </div>
+
+            <!-- Step 3: Fund & Transact -->
+            <div class="step-panel absolute inset-0 opacity-0 pointer-events-none" data-step-panel="2">
+              <img src="images/steps-1.png" alt="Fund and transact" class="absolute inset-0 size-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Steps timeline -->
+          <div class="flex-1 w-full">
+            <ol class="relative" data-steps-list>
+              <div class="step-slider" aria-hidden="true"></div>
+              <li class="step-item is-active relative pl-8 pb-12" data-step-item="0">
+                <span class="step-dot absolute left-0 top-2 size-[11px] rounded-full"></span>
+                <span class="absolute left-[5px] top-5 bottom-0 border-l border-dashed border-[#414b61]"></span>
+                <div class="step-highlight rounded-lg -mx-6 -mt-3 px-6 py-3">
+                  <p class="text-[#575f6f] text-xs tracking-[1.3px] font-normal" style="font-family: Inter, sans-serif;">01</p>
+                  <h3 class="step-title mt-3 text-2xl font-bold tracking-[-0.44px]">Create an Account</h3>
+                  <p class="mt-3 text-white/80 text-lg max-w-[450px]">Sign up in minutes with your name, email, and password. We support Sole Proprietors, Partnerships, and Incorporated Businesses.</p>
+                </div>
+              </li>
+              <li class="step-item relative pl-8 pb-12" data-step-item="1">
+                <span class="step-dot absolute left-0 top-2 size-[11px] rounded-full"></span>
+                <span class="absolute left-[5px] top-5 bottom-0 border-l border-dashed border-[#414b61]"></span>
+                <div class="step-highlight rounded-lg -mx-6 -mt-3 px-6 py-3">
+                  <p class="text-[#575f6f] text-xs tracking-[1.3px] font-normal" style="font-family: Inter, sans-serif;">02</p>
+                  <h3 class="step-title mt-3 text-2xl font-bold tracking-[-0.44px]">Verify Your Business</h3>
+                  <p class="mt-3 text-white/80 text-lg max-w-[450px]">Complete our tailored KYB process. We only ask for the documents relevant to your business type — no unnecessary documentation.</p>
+                </div>
+              </li>
+              <li class="step-item relative pl-8" data-step-item="2">
+                <span class="step-dot absolute left-0 top-2 size-[11px] rounded-full"></span>
+                <div class="step-highlight rounded-lg -mx-6 -mt-3 px-6 py-3">
+                  <p class="text-[#575f6f] text-xs tracking-[1.3px] font-normal" style="font-family: Inter, sans-serif;">03</p>
+                  <h3 class="step-title mt-3 text-2xl font-bold tracking-[-0.44px]">Fund &amp; Transact</h3>
+                  <p class="mt-3 text-white/80 text-lg max-w-[450px]">Fund your multi-currency wallet and start Transacting with dashboards to provide visibility.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-10 text-center text-white/70 text-[13px] tracking-[0.325px]">No sales calls required to get started.</p>
+    </div>
+  </section>
+
+  <!-- SECTION: Trust & Compliance -->
+  <section id="trust" class="relative bg-[#09090d] py-28 md:py-36">
+    <div class="max-w-[1306px] mx-auto px-6 md:px-10">
+      <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+        <div class="max-w-[557px] shrink-0">
+          <p class="text-[#4f7aff] text-[18px] font-medium uppercase tracking-[1.44px]">Trust &amp; Compliance</p>
+          <h2 class="mt-3 text-[36px] md:text-[44px] font-medium leading-[1.15] text-white">Your security is<br /><span class="text-[#bac6df]">our priority.</span></h2>
+          <p class="mt-6 text-[#8a92a2] text-[18px] leading-relaxed">Switch Business is regulated and compliant with international financial standards. We use bank-grade encryption and multi-factor authentication to protect your funds and data. Our tailored KYB/KYC process ensures we meet all regulatory requirements.</p>
+        </div>
+
+        <div class="flex-1 w-full max-w-[560px] flex flex-col">
+          <div class="flex items-start gap-3 py-6 border-b border-white/[0.06]">
+            <span class="mt-3 size-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+            <div>
+              <h3 class="text-white text-xl font-medium">FINTRAC Regulated</h3>
+              <p class="mt-1.5 text-[#8a92a2] text-sm leading-relaxed">Registered with Canada's financial intelligence unit.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 py-6 border-b border-white/[0.06]">
+            <span class="mt-3 size-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+            <div>
+              <h3 class="text-white text-xl font-medium">TLS 1.2+ Encryption</h3>
+              <p class="mt-1.5 text-[#8a92a2] text-sm leading-relaxed">Bank-grade encryption across every transaction.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 py-6 border-b border-white/[0.06]">
+            <span class="mt-3 size-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+            <div>
+              <h3 class="text-white text-xl font-medium">Multi-factor Authentication</h3>
+              <p class="mt-1.5 text-[#8a92a2] text-sm leading-relaxed">Your account protected at every login and action.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 py-6 border-b border-white/[0.06]">
+            <span class="mt-3 size-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+            <div>
+              <h3 class="text-white text-xl font-medium">Tailored KYB/KYC</h3>
+              <p class="mt-1.5 text-[#8a92a2] text-sm leading-relaxed">Only the documents you actually need — nothing more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Coming Soon -->
+  <section id="coming-soon" class="relative bg-[#060608] py-28 md:py-36 overflow-hidden">
+    <div class="max-w-[1306px] mx-auto px-6 md:px-10">
+      <p class="text-[#4f7aff] text-[18px] font-medium uppercase tracking-[1.44px]">Coming Soon.</p>
+      <h2 class="mt-3 text-[36px] md:text-[44px] font-medium leading-[1.15] text-white">
+        Everything you need.<br />
+        <span class="text-[#bac6df]">Nothing you don't.</span>
+      </h2>
+
+      <div class="relative mt-16">
+        <img src="images/coming1.png" alt="" class="hidden lg:block absolute left-[-90px] top-[58%] -translate-y-1/2 w-[340px] pointer-events-none select-none z-0" />
+        <img src="images/coming2.png" alt="" class="hidden lg:block absolute right-[-70px] top-[58%] -translate-y-1/2 w-[300px] pointer-events-none select-none z-0" />
+
+        <div class="relative z-10 rounded-[24px] border border-white/10 bg-[#0a0a10]/70 backdrop-blur-xl shadow-[inset_0_0_120px_0_rgba(19,46,103,0.4)] overflow-hidden p-10 md:p-16">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-12">
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/payment.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">Payment links</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Create and share payment links to collect from clients or customers effortlessly.</p>
+            </div>
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/card.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">Corporate cards</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Issue corporate cards to your team for controlled business spending worldwide.</p>
+            </div>
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/operations.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">API access</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Integrate Switch Hub into your existing systems with our developer-friendly API.</p>
+            </div>
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/users.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">Team management</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Invite team members with defined roles to collaborate on payments and financial operations.</p>
+            </div>
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/wallet.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">Sub-accounts</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Organize funds by business unit, department, or use case with dedicated sub-accounts.</p>
+            </div>
+
+            <div>
+              <div class="size-11 rounded-xl bg-[#0052fe] flex items-center justify-center">
+                <img src="images/icons/transactions.png" alt="" class="size-6" />
+              </div>
+              <h3 class="mt-4 text-white text-xl font-semibold">Account Statement</h3>
+              <p class="mt-2 text-[#8a92a2] text-base leading-relaxed">Organize funds by business unit, department, or use case with dedicated sub-accounts.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CTA -->
+  <section id="cta" class="relative bg-[#09090d] py-20 md:py-28">
+    <div class="max-w-[1306px] mx-auto px-6 md:px-10">
+      <div class="relative rounded-[32px] bg-[#0052fe] overflow-hidden px-10 md:px-16 py-16 md:py-20">
+        <div class="relative z-10 max-w-[480px]">
+          <h2 class="text-[36px] md:text-[44px] font-semibold leading-[1.15] text-white">
+            Ready to open your<br />
+            <span class="text-[#bac6df]">business account?</span>
+          </h2>
+          <p class="mt-6 text-white/80 text-lg leading-relaxed max-w-[420px]">Get started in under 5 minutes. No commitment required. Start sending global payments today.</p>
+          <a href="#" class="mt-10 inline-flex items-center gap-2 rounded-full text-[#15224a] font-bold px-7 py-4 text-base" style="background:linear-gradient(180deg,#ffe27a 0%,#ffcc00 100%)">
+            Open free account
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <img src="images/cta-laptop.png" alt="" class="hidden md:block absolute right-[-20px] bottom-0 w-[640px] max-w-none pointer-events-none select-none" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Footer -->
+  <footer class="relative bg-[#0a0b0d] pt-20">
+    <div class="max-w-[1306px] mx-auto px-6 md:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <p class="text-white/50 text-sm font-medium">Company</p>
+          <div class="mt-9 flex flex-col gap-[34px]">
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">About</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Services</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Partners</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-white/50 text-sm font-medium">Legal</p>
+          <div class="mt-9 flex flex-col gap-[34px]">
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Privacy Pollicy</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Terms and Conditions</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">License</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Compliance</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-white/50 text-sm font-medium">Help &amp; Support</p>
+          <div class="mt-9 flex flex-col gap-[34px]">
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Customer Support</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">Contact Us</a>
+            <a href="#" class="text-white text-base hover:text-white/70 transition-colors">FAQs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 border-t border-white/10 pt-8 flex flex-col sm:flex-row gap-4 items-center justify-between">
+        <p class="text-white/40 text-sm">&copy; 2025 Switch Hub. All rights reserved</p>
+        <div class="flex items-center gap-3 text-white/40 text-sm">
+          <span>Available on</span>
+          <span class="flex items-center gap-2.5">
+            <svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 3.5c0-.4.22-.77.58-.96a1 1 0 011.05.05l13.6 8.5c.34.21.55.59.55.99s-.21.78-.55.99l-13.6 8.5a1 1 0 01-1.05.05A1.08 1.08 0 013 21.04V3.5z"/></svg>
+            <span class="text-white/20">|</span>
+            <svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.36 1.43c.1 1-.27 1.98-.86 2.69-.6.72-1.58 1.27-2.56 1.19-.12-.98.32-2 .9-2.66.62-.71 1.65-1.24 2.52-1.22zM20.7 17.2c-.45 1.02-.67 1.48-1.25 2.39-.82 1.27-1.97 2.86-3.4 2.87-1.27.02-1.6-.83-3.32-.82-1.72.01-2.08.84-3.35.83-1.43-.02-2.52-1.45-3.34-2.72C3.6 16.86 3.13 12.94 4.6 10.4c.84-1.45 2.34-2.37 3.92-2.39 1.34-.02 2.18.9 3.3.9 1.09 0 1.74-.9 3.3-.9 1.13 0 2.32.62 3.16 1.68-2.78 1.52-2.33 5.47.42 6.51-.5 1.43 0 0 0 0z"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-20 h-[235px] overflow-hidden">
+      <img src="images/Footerlogo.png" alt="Switch" class="absolute left-0 top-[20px] w-full select-none pointer-events-none" />
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

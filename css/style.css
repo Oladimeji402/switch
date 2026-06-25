@@ -1,0 +1,50 @@
+/* custom overrides go here, on top of Tailwind */
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee-scroll 90s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.step-panel {
+  transition: opacity 0.6s ease;
+}
+.step-dot {
+  background: rgba(255, 255, 255, 0.18);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.step-title {
+  color: #ffffff;
+  transition: color 0.4s ease;
+}
+.step-item.is-active .step-dot {
+  background: #ffcc00;
+  box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.22);
+}
+.step-item.is-active .step-title {
+  color: #98baff;
+}
+
+.step-highlight {
+  position: relative;
+  z-index: 1;
+}
+.step-slider {
+  position: absolute;
+  top: 0;
+  height: 0;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+  z-index: 0;
+  transition: top 0.6s cubic-bezier(0.4, 0, 0.2, 1), height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.6s cubic-bezier(0.4, 0, 0.2, 1), width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
